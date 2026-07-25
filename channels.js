@@ -1,9 +1,9 @@
 // Curated list: kid-friendly, English-SPOKEN YouTube channels, grouped by topic.
 // [channel name, channelId, one-line Vietnamese description]
-// Rule: a child must be able to watch it alone AND understand it. No adult channels
-// (medical, pro machining, adult ESL), no teacher/parent-facing channels, no prank,
-// reaction or hype channels, no silent channels (ASMR, timelapse art, instrumental).
-// Descriptions are condensed from each channel's own About text.
+// Rule: a child must be able to watch it alone AND understand it. No adult channels,
+// no teacher/parent-facing channels, no prank/reaction/hype channels, no silent
+// channels (ASMR, timelapse art, instrumental music, wordless process videos).
+// Nursery topics are ordered: real people first, then cartoons, then formal lessons.
 window.CHANNELS = {
   "🔤 Tiếng Anh cho bé": [
     [
@@ -12,9 +12,14 @@ window.CHANNELS = {
       "Người thật — Blippi khám phá xe cộ, sân chơi, nghề nghiệp, nói chậm và rõ."
     ],
     [
+      "Ms Rachel",
+      "UCG2CL6EUjG8TVT1Tpl9nJdg",
+      "Người thật — cô Rachel dạy nói và hát từ đầu tiên, cực chậm và rõ."
+    ],
+    [
       "Happy Toddler Learning with Miss Kaye",
       "UCD3bwepnHLJLhfXnnlV7wqw",
-      "Người thật — cô giáo mầm non Mỹ dạy từ đầu tiên và bộ phận cơ thể."
+      "Người thật — cô giáo mầm non Mỹ dạy từ vựng và bộ phận cơ thể."
     ],
     [
       "Paisley's Corner",
@@ -32,39 +37,9 @@ window.CHANNELS = {
       "Người thật — bài học vui và trò chơi đố cho trẻ tiểu học."
     ],
     [
-      "Vooks - Read Alouds for Kids",
-      "UCGfA6UdZEmpIwBZ4btAKkgA",
-      "Hoạt hình — sách thiếu nhi kể thành phim, đọc chuẩn, không quảng cáo, cho bé 2-8 tuổi."
-    ],
-    [
-      "Little Fox - Kids Stories and Songs",
-      "UCXRPWm72nrs5sK7fNTSXZrw",
-      "Hoạt hình — truyện và bài hát tiếng Anh, chia theo cấp độ dễ đến khó."
-    ],
-    [
-      "English Fairy Tales and Stories",
-      "UC53qnQM3rSPxiyInxP0TGnA",
-      "Hoạt hình — truyện cổ tích kinh điển kể bằng tiếng Anh."
-    ],
-    [
-      "A Story",
-      "UCOHdngJoE5bPDycsRLzoGwg",
-      "Hoạt hình — truyện cổ tích nhiều màu sắc cho trẻ."
-    ],
-    [
-      "Gigglebox",
-      "UCmnlBrE7TCf3wkrwd6mxPrQ",
-      "Hoạt hình — phim thiếu nhi Úc, lời kể rõ ràng."
-    ],
-    [
-      "Dream English Kids",
-      "UC6LKuH7RPkvRmzS9-8URtqA",
-      "Hoạt hình — bài hát tiếng Anh bắt tai, cả nhà hát theo được."
-    ],
-    [
-      "LankyBox Go!",
-      "UCBth_LGMSh68e1mpjm_6Jug",
-      "Hoạt hình — bài hát và phim ngắn chính thức của LankyBox."
+      "Maple Leaf Learning",
+      "UCdHK6g8ddMEcMu9B3LgeKYg",
+      "Bài học — tiếng Anh đơn giản cho bé mới bắt đầu, nhắc lại nhiều lần."
     ],
     [
       "English Singsing",
@@ -82,6 +57,85 @@ window.CHANNELS = {
       "Bài học — con vật, xe cộ, từ vựng cơ bản."
     ]
   ],
+  "🎵 Bài hát & vần điệu": [
+    [
+      "Super Simple Songs",
+      "UCLsooMJoIpl_7ux2jvdPB-Q",
+      "Bài hát thiếu nhi lời chậm, đơn giản — chuẩn mực cho lớp mầm non."
+    ],
+    [
+      "Bounce Patrol",
+      "UC56cowXhoqRWHeqfSJkIQaA",
+      "Người thật — nhóm bạn hát và nhảy các bài thiếu nhi tiếng Anh."
+    ],
+    [
+      "Mother Goose Club",
+      "UCJkWoS4RsldA1coEIot5yDA",
+      "Người thật hoá trang hát đồng dao tiếng Anh kinh điển."
+    ],
+    [
+      "Jack Hartmann",
+      "UCVcQH8A634mauPrGbWs7QlQ",
+      "Thầy Jack vừa hát vừa vận động: chữ cái, số đếm, phát âm."
+    ],
+    [
+      "The Kiboomers",
+      "UCLy6-72NzYpFztbJ7jNEMkg",
+      "Bài hát vui dạy màu sắc, con vật, thói quen hằng ngày."
+    ],
+    [
+      "Gracie's Corner",
+      "UCQ2FzqIvWSE7ysvL1sLWQ5Q",
+      "Đồng dao nhịp điệu vui tươi, hình vẽ dễ thương."
+    ],
+    [
+      "Dream English Kids",
+      "UC6LKuH7RPkvRmzS9-8URtqA",
+      "Bài hát tiếng Anh bắt tai, cả nhà hát theo được."
+    ],
+    [
+      "LankyBox Go!",
+      "UCBth_LGMSh68e1mpjm_6Jug",
+      "Bài hát và phim ngắn chính thức của LankyBox."
+    ]
+  ],
+  "📖 Truyện & hoạt hình": [
+    [
+      "Vooks - Read Alouds for Kids",
+      "UCGfA6UdZEmpIwBZ4btAKkgA",
+      "Sách thiếu nhi kể thành phim, đọc chuẩn, không quảng cáo, cho bé 2-8 tuổi."
+    ],
+    [
+      "Little Fox - Kids Stories and Songs",
+      "UCXRPWm72nrs5sK7fNTSXZrw",
+      "Truyện và bài hát tiếng Anh, chia theo cấp độ dễ đến khó."
+    ],
+    [
+      "English Fairy Tales and Stories",
+      "UC53qnQM3rSPxiyInxP0TGnA",
+      "Truyện cổ tích kinh điển kể bằng tiếng Anh."
+    ],
+    [
+      "A Story",
+      "UCOHdngJoE5bPDycsRLzoGwg",
+      "Truyện cổ tích hoạt hình nhiều màu sắc cho trẻ."
+    ],
+    [
+      "Gigglebox",
+      "UCmnlBrE7TCf3wkrwd6mxPrQ",
+      "Phim hoạt hình thiếu nhi Úc, lời kể rõ ràng."
+    ],
+    [
+      "Alphablocks",
+      "UC_qs3c0ehDvZkbiEbOj6Drg",
+      "Các khối chữ cái ghép thành từ — dạy ghép vần tiếng Anh."
+    ],
+    [
+      "Colourblocks",
+      "UCQkuKPaVlYK7QCIVTb0lV2Q",
+      "Các khối màu dạy màu sắc và cách pha màu."
+    ]
+  ],
   "🔢 Học ở trường": [
     [
       "Numberblocks",
@@ -94,14 +148,39 @@ window.CHANNELS = {
       "Bài giảng hoạt hình ngắn, giải thích mọi thứ trên đời."
     ],
     [
-      "Kiwi Quiz",
-      "UCDIsnCNTwiX_Mm0RdW7fM-w",
-      "Chú vẹt Kiwi dẫn các trò đố vui: đoán con vật, đoán bài hát."
+      "Homeschool Pop",
+      "UCfPyVJEBD7Di1YYjTdS2v8g",
+      "Bài học ngắn về khoa học, lịch sử, địa lý cho tiểu học."
+    ],
+    [
+      "Free School",
+      "UCebMFnw6WxozGmqGekJHOJg",
+      "Giới thiệu lịch sử, nghệ thuật, khoa học cho trẻ nhỏ."
+    ],
+    [
+      "Crash Course Kids",
+      "UCONtPx56PSebXJOxbFv-2jQ",
+      "Khoa học tiểu học, mỗi bài vài phút, hình minh hoạ rõ."
+    ],
+    [
+      "Learn Bright",
+      "UCKCsVSA5THlkHbnkZTPm6-g",
+      "Bài giảng theo từng môn, giọng đọc rõ, có ví dụ."
+    ],
+    [
+      "Kids Learning Tube",
+      "UC7EFWpvc1wYuUwrtZ_BLi9A",
+      "Hát để nhớ hành tinh, cơ thể người, các nước trên thế giới."
     ],
     [
       "GeoGlobeTales",
       "UCPKVNqfbunZCkbvjBgf6CdA",
       "Chuyện thú vị về các nước và trái đất, tiếng Anh dễ nghe."
+    ],
+    [
+      "Kiwi Quiz",
+      "UCDIsnCNTwiX_Mm0RdW7fM-w",
+      "Chú vẹt Kiwi dẫn các trò đố vui: đoán con vật, đoán bài hát."
     ]
   ],
   "🐾 Động vật & thiên nhiên": [
@@ -118,7 +197,7 @@ window.CHANNELS = {
     [
       "Nat Geo Kids",
       "UCXVCgDuD_QCkI7gTKU7-tpg",
-      "National Geographic bản cho trẻ: động vật và khoa học, mỗi tuần một video."
+      "National Geographic bản cho trẻ: động vật và khoa học mỗi tuần."
     ],
     [
       "National Geographic",
@@ -131,9 +210,19 @@ window.CHANNELS = {
       "Hoạt hình ngắn giải thích chuyện của trái đất và thiên nhiên."
     ],
     [
+      "Animal Wonders Montana",
+      "UC1Nj4gkoi_n5eCcrKCVOXKA",
+      "Trung tâm cứu hộ giới thiệu từng con vật thật và cách chăm sóc."
+    ],
+    [
       "TerraGreen",
       "UCkYVerz4P_kAZNbDdg2SAeg",
       "Nuôi và tìm hiểu các loài vật, mỗi video học được một điều mới."
+    ],
+    [
+      "Aquarium Info",
+      "UCkXVK-XrnwznaqYx0aKGAtg",
+      "Khám phá các loài vật rồi xây bể nuôi thật đẹp cho chúng."
     ],
     [
       "tanks for nothin",
@@ -144,16 +233,6 @@ window.CHANNELS = {
       "SerpaDesign",
       "UCGzXtNdhjPxvCNWFme1bG0g",
       "Làm tiểu cảnh, hồ cá, terrarium — mang thiên nhiên vào trong nhà."
-    ],
-    [
-      "Aquarium Info",
-      "UCkXVK-XrnwznaqYx0aKGAtg",
-      "Khám phá các loài vật rồi xây bể nuôi thật đẹp cho chúng, kiểu STEM vui."
-    ],
-    [
-      "Fishy Science",
-      "UC41l_Utsx2TEx3LbWFhtO0w",
-      "Giải thích khoa học về cá và cơ thể sống bằng hình vẽ dễ hiểu."
     ]
   ],
   "🔬 Khoa học & thí nghiệm": [
@@ -163,9 +242,29 @@ window.CHANNELS = {
       "Cựu kỹ sư NASA làm thí nghiệm và máy móc khổng lồ, rất vui."
     ],
     [
-      "SmarterEveryDay",
-      "UC6107grRI4m0o2-emgoDnAA",
-      "Khám phá thế giới bằng khoa học, quay chậm rồi giải thích."
+      "SciShow Kids",
+      "UCRFIPG2u1DxKLNuE3y2SjHA",
+      "Trả lời câu hỏi khoa học của trẻ bằng thí nghiệm đơn giản."
+    ],
+    [
+      "Peekaboo Kidz",
+      "UCxlJ45KjG4XVcQ_hd8j227A",
+      "Dr. Binocs giải thích mọi thứ bằng hoạt hình ngắn."
+    ],
+    [
+      "Operation Ouch",
+      "UCQJDFI9j8UeNoqra37p5OkA",
+      "Hai bác sĩ vui tính khám phá cơ thể người — chương trình CBBC."
+    ],
+    [
+      "Maddie Moate",
+      "UCQ0_JQL4wdQd-Xe5hC4PwTg",
+      "Người thật — Maddie khám phá thiên nhiên và đồ vật quanh nhà."
+    ],
+    [
+      "TheDadLab",
+      "UCc_-hy0u9-oKlNdMKHBudcQ",
+      "Ông bố làm thí nghiệm đơn giản cùng hai con ngay tại nhà."
     ],
     [
       "The Slow Mo Guys",
@@ -183,12 +282,17 @@ window.CHANNELS = {
       "Hoạt hình 3D giải thích máy móc và toà nhà hoạt động thế nào."
     ],
     [
-      "Miwu Science",
-      "UCERpfFL1aRqsrJhmKkGAEPA",
-      "Kiến thức khoa học vui, làm riêng để trẻ thích khoa học."
+      "Fishy Science",
+      "UC41l_Utsx2TEx3LbWFhtO0w",
+      "Giải thích khoa học về cá và cơ thể sống bằng hình vẽ dễ hiểu."
     ]
   ],
   "🚀 Vũ trụ & tên lửa": [
+    [
+      "NASA",
+      "UCLA_DiR1FfKNvjuUpBHmylQ",
+      "Kênh chính thức của NASA: phi hành gia, tên lửa, trạm vũ trụ."
+    ],
     [
       "SpaceX",
       "UCtI0Hodo5o5dUb67FeUjDeA",
@@ -198,9 +302,24 @@ window.CHANNELS = {
       "Astrum",
       "UC-9b7aDP6ZN0coj9-xFnrtw",
       "Giải thích hệ mặt trời, hành tinh, vũ trụ bằng lời kể chậm rãi."
+    ],
+    [
+      "Miwu Science",
+      "UCERpfFL1aRqsrJhmKkGAEPA",
+      "Kiến thức khoa học vui, làm riêng để trẻ thích khoa học."
     ]
   ],
-  "🤿 Lặn biển & câu cá": [
+  "🤿 Biển & câu cá": [
+    [
+      "Jonathan Bird's Blue World",
+      "UCFH-Qa1s6rQRTrQjFg8N84Q",
+      "Nhà quay phim biển dẫn bé đi lặn xem cá mập, rùa, san hô."
+    ],
+    [
+      "Monterey Bay Aquarium",
+      "UCnM5iMGiKsZg-iOlIO2ZkdQ",
+      "Thuỷ cung Mỹ: sinh vật biển, giờ cho ăn, camera dưới nước."
+    ],
     [
       "DALLMYD",
       "UCI4fHQkguBNW3SwTqmehzjw",
@@ -241,6 +360,11 @@ window.CHANNELS = {
   ],
   "🔨 Chế tạo & nấu ăn": [
     [
+      "Mister Maker",
+      "UC3hGM2kxOs8vRYCcvfH6vuw",
+      "Người thật — chú Mister Maker làm đồ thủ công từ vật liệu sẵn có."
+    ],
+    [
       "Bobby Duke Arts",
       "UCSC1HqVmTaE4Shn32ihbC7w",
       "Biến vật liệu bỏ đi thành tác phẩm, hài hước, hợp trẻ con."
@@ -269,6 +393,28 @@ window.CHANNELS = {
       "Maangchi",
       "UC8gFadPgK2r1ndqLI04Xvvw",
       "Dạy nấu món Hàn bằng tiếng Anh, giọng vui, dễ làm theo."
+    ]
+  ],
+  "🤸 Vận động & yoga": [
+    [
+      "GoNoodle",
+      "UC2YBT7HYqCbbvzu3kKZ3wnw",
+      "Nhảy và vận động theo nhạc — nghỉ giữa giờ học."
+    ],
+    [
+      "Cosmic Kids Yoga",
+      "UC5uIZ2KOZZeQDQo_Gsi_qbQ",
+      "Cô Jaime dạy yoga qua các câu chuyện phiêu lưu."
+    ],
+    [
+      "Ninja Kidz TV",
+      "UCpZ88DWlKW0H_AYDaUZptcw",
+      "Nhóm trẻ tập ninja, thể dục và đóng phim ngắn."
+    ],
+    [
+      "Payton Delu",
+      "UCv-lQ2yyKXQkdjBrgSS9gxw",
+      "Thành viên Ninja Kidz: thể dục, vượt chướng ngại vật."
     ]
   ],
   "🎉 Giải trí gia đình": [
@@ -311,14 +457,19 @@ window.CHANNELS = {
       "Daily Dose Of Internet",
       "UCdC0An4ZPNr_YiFiYoVbwaw",
       "Tuyển clip thú vị trên mạng, lời bình tiếng Anh ngắn và dễ nghe."
-    ],
-    [
-      "Payton Delu",
-      "UCv-lQ2yyKXQkdjBrgSS9gxw",
-      "Thành viên Ninja Kidz: thể dục, vượt chướng ngại vật."
     ]
   ],
   "🎮 Game & Roblox": [
+    [
+      "EthanGamer",
+      "UC1o4Ct4ca7uzqohH0xdaZpQ",
+      "Bạn nhỏ chơi game, lời lẽ sạch sẽ, hợp trẻ con."
+    ],
+    [
+      "StacyPlays",
+      "UC2c6FqF4olAZ7LodVEUueNQ",
+      "Chơi Minecraft nhẹ nhàng, nhiều chó và động vật."
+    ],
     [
       "Ali-A Blox",
       "UCD7zDSR3U8R4-FWCykVTT1w",
