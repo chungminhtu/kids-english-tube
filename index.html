@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="vi">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>YouTube cho bé</title>
+<style>
+:root{color-scheme:light}
+*{box-sizing:border-box}
+body{margin:0;padding:18px 20px 60px;background:#fffdf6;color:#22252b;
+ font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+h1{font-size:26px;margin:0 0 2px;color:#ff5c8a}
+p.sub{margin:0 0 14px;color:#5c6270;font-size:14px}
+.bar{position:sticky;top:0;background:#fffdf6;padding:10px 0 12px;z-index:5;
+ border-bottom:2px dashed #ffd9a8;margin-bottom:16px}
+#q{width:100%;max-width:380px;padding:11px 14px;border:2px solid #ffc978;border-radius:14px;
+ background:#fff;font-size:16px;font-family:inherit}
+#q:focus{outline:none;border-color:#ff9f43}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chip{border:2px solid #ffd9a8;background:#fff;color:#22252b;border-radius:999px;
+ padding:7px 14px;font-size:14px;cursor:pointer;font-family:inherit}
+.chip:hover{background:#fff3e0}
+.chip.on{background:#ff9f43;border-color:#ff9f43;color:#fff}
+.chip b{font-weight:700;opacity:.6;font-size:12px}
+section.cat{margin:0 0 26px}
+section.cat h2{font-size:20px;margin:0 0 12px;padding:6px 12px;border-radius:12px;
+ background:#e8f3ff;display:inline-block}
+.ch{background:#fff;border:2px solid #f0eadf;border-radius:16px;padding:12px 14px;margin:0 0 12px}
+.chead{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-bottom:8px}
+a.cname{font-size:17px;font-weight:700;color:#1a5fd0;text-decoration:none}
+a.cname:hover{text-decoration:underline}
+.b{font-size:11px;font-weight:700;padding:2px 9px;border-radius:999px}
+.b.ok{background:#dff5e3;color:#1a7f3c}
+.b.watch{background:#fff0d6;color:#a86a00}
+.vids{display:flex;gap:12px;flex-wrap:wrap}
+.v{width:224px}
+.v img{width:224px;aspect-ratio:16/9;object-fit:cover;border-radius:12px;background:#eee;display:block}
+.v img:hover{outline:3px solid #ff9f43}
+.v .t{display:block;font-size:14px;margin:5px 0 0;color:#22252b;text-decoration:none}
+.v a{text-decoration:none}
+.v a:hover .t{color:#1a5fd0;text-decoration:underline}
+.v .d{font-size:12px;color:#8a8f9c}
+.skel{width:224px;height:126px;border-radius:12px;background:#f3f0ea}
+.err{color:#c04b4b;font-size:13px}
+#none{color:#8a8f9c}
+footer{margin-top:30px;color:#8a8f9c;font-size:13px}
+</style>
+
+<h1>📺 YouTube cho bé</h1>
+<p class="sub"><b id="total">…</b> kênh nói tiếng Anh, chọn cho trẻ con. Video mới nhất lấy trực tiếp
+từ YouTube mỗi lần mở trang. Bấm tên kênh hoặc ảnh video để mở tab mới.
+<span class="b ok">TỰ XEM</span> bé xem một mình được &nbsp;
+<span class="b watch">XEM TRƯỚC</span> bố mẹ xem trước</p>
+
+<div class="bar">
+  <input id="q" type="search" placeholder="Tìm kênh... (Esc để xoá)">
+  <div class="chips" id="chips"><button class="chip on" data-cat="all">⭐ Tất cả</button></div>
+</div>
+<p id="none" hidden>Không có kênh nào khớp.</p>
+<div id="body"></div>
+<footer>Danh sách kênh là dữ liệu duy nhất trong repo này — không có video nào được lưu sẵn.</footer>
+
+<script src="channels.js"></script>
+<script>
+var PER_CHANNEL = 5;
+// YouTube RSS khong cho goi thang tu trinh duyet (khong co CORS), nen di qua proxy cong cong.
+// Chay ban local (kids_yt.py) thi dung /feed cua chinh no, nhanh va khong phu thuoc ai.
+// 6 nha cung cap, thu lan luot: proxy mien phi hay chet vat, co du du phong thi khong sao
+var PROXIES = [
+  {url: function(u){ return 'https://corsproxy.io/?url=' + encodeURIComponent(u) }, kind: 'xml'},
+  {url: function(u){ return 'https://api.cors.lol/?url=' + encodeURIComponent(u) }, kind: 'xml'},
+  {url: function(u){ return 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(u) },
+   kind: 'rss2json'},
+  {url: function(u){ return 'https://api.allorigins.win/raw?url=' + encodeURIComponent(u) }, kind: 'xml'},
+  {url: function(u){ return 'https://api.allorigins.win/get?url=' + encodeURIComponent(u) },
+   kind: 'wrapped'},
+  {url: function(u){ return 'https://api.codetabs.com/v1/proxy?quest=' + encodeURIComponent(u) },
+   kind: 'xml'}
+];
+var PROXY_TIMEOUT = 12000;   // bo qua proxy treo, di tiep cai sau
+var localFeed = true;   // tat sau lan dau that bai (vi du tren GitHub Pages)
+
+function parseFeed(xml){
+  var doc = new DOMParser().parseFromString(xml, 'application/xml');
+  return [].slice.call(doc.getElementsByTagName('entry')).slice(0, PER_CHANNEL).map(function(e){
+    function txt(tag){ var n = e.getElementsByTagName(tag)[0]; return n ? n.textContent : '' }
+    var id = txt('yt:videoId') || txt('videoId');
+    return {id: id, title: txt('title'), published: (txt('published') || '').slice(0, 10),
+            thumb: 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg'};
+  }).filter(function(v){ return v.id });
+}
+
+function parseRss2Json(text){
+  var j = JSON.parse(text);
+  return (j.items || []).slice(0, PER_CHANNEL).map(function(it){
+    var id = (it.guid || '').split(':').pop() || (it.link || '').split('v=').pop();
+    return {id: id, title: it.title || '', published: (it.pubDate || '').slice(0, 10),
+            thumb: 'https://i.ytimg.com/vi/' + id + '/hqdefault.jpg'};
+  }).filter(function(v){ return v.id.length === 11 });
+}
+
+function grab(url, kind){
+  var ctl = new AbortController(), timer = setTimeout(function(){ ctl.abort() }, PROXY_TIMEOUT);
+  return fetch(url, {signal: ctl.signal}).then(function(r){
+    if(!r.ok) throw 0;
+    return r.text();
+  }).then(function(t){
+    var v = kind === 'rss2json' ? parseRss2Json(t)
+          : kind === 'wrapped'  ? parseFeed(JSON.parse(t).contents || '')
+          : parseFeed(t);
+    if(!v.length) throw 0;
+    return v;
+  }).finally(function(){ clearTimeout(timer) });
+}
+
+function fetchFeed(cid){
+  var rss = 'https://www.youtube.com/feeds/videos.xml?channel_id=' + cid;
+  var chain = Promise.reject();
+  if(localFeed){          // ban chay kem kids_yt.py o nha thi dung no truoc
+    chain = fetch('/feed?cid=' + cid).then(function(r){
+      if(!r.ok) throw 0;
+      return r.json();
+    }).then(function(j){
+      if(!j.videos || !j.videos.length) throw 0;
+      return j.videos.slice(0, PER_CHANNEL);
+    }).catch(function(){ localFeed = false; throw 0 });
+  }
+  PROXIES.forEach(function(p){
+    chain = chain.catch(function(){ return grab(p.url(rss), p.kind) });
+  });
+  return chain;
+}
+
+function card(v){
+  return '<div class="v"><a href="https://www.youtube.com/watch?v=' + v.id +
+    '" target="_blank" rel="noreferrer"><img loading="lazy" src="' + v.thumb + '" alt="">' +
+    '<span class="t">' + v.title.replace(/</g, '&lt;') + '</span></a>' +
+    '<span class="d">' + v.published + '</span></div>';
+}
+
+function esc(s){ return s.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;') }
+
+// dung trang: tat ca mo san, khong thu gon gi ca
+var chipsBox = document.getElementById('chips'), body = document.getElementById('body'), n = 0;
+Object.keys(window.CHANNELS).forEach(function(cat, i){
+  var chans = window.CHANNELS[cat];
+  n += chans.length;
+  chipsBox.insertAdjacentHTML('beforeend',
+    '<button class="chip" data-cat="' + i + '">' + esc(cat) + ' <b>' + chans.length + '</b></button>');
+  body.insertAdjacentHTML('beforeend', '<section class="cat" data-cat="' + i + '"><h2>' + esc(cat) +
+    '</h2>' + chans.map(function(c){
+      var badge = c[2] === 'OK' ? '<span class="b ok">TỰ XEM</span>'
+                                : '<span class="b watch">XEM TRƯỚC</span>';
+      return '<div class="ch" data-cid="' + c[1] + '" data-name="' + esc(c[0].toLowerCase()) + '">' +
+        '<div class="chead"><a class="cname" href="https://www.youtube.com/channel/' + c[1] +
+        '" target="_blank" rel="noreferrer">' + esc(c[0]) + '</a>' + badge + '</div>' +
+        '<div class="vids"><div class="skel"></div><div class="skel"></div><div class="skel"></div>' +
+        '<div class="skel"></div><div class="skel"></div></div></div>';
+    }).join('') + '</section>');
+});
+document.getElementById('total').textContent = n;
+
+// nap video khi kenh sap xuat hien tren man hinh (khong ban 97 request cung luc)
+var seen = new WeakSet();
+function load(d){
+  if(seen.has(d)) return;
+  seen.add(d);
+  var box = d.querySelector('.vids');
+  fetchFeed(d.dataset.cid).then(function(vs){
+    box.innerHTML = vs.map(card).join('');
+  }).catch(function(){
+    box.innerHTML = '<span class="err">Không tải được video. Thử tải lại trang.</span>';
+    seen.delete(d);
+  });
+}
+var io = new IntersectionObserver(function(es){
+  es.forEach(function(e){ if(e.isIntersecting) load(e.target) });
+}, {rootMargin: '600px'});
+document.querySelectorAll('.ch').forEach(function(d){ io.observe(d) });
+
+// chip chu de + o tim
+var chips = [].slice.call(document.querySelectorAll('.chip')),
+    cats = [].slice.call(document.querySelectorAll('section.cat')),
+    none = document.getElementById('none'), q = document.getElementById('q'), cur = 'all';
+function apply(){
+  var s = q.value.trim().toLowerCase(), shown = 0;
+  cats.forEach(function(sec){
+    var catOn = (cur === 'all' || sec.dataset.cat === cur),
+        catHit = sec.querySelector('h2').textContent.toLowerCase().indexOf(s) >= 0, hits = 0;
+    sec.querySelectorAll('.ch').forEach(function(ch){
+      var hit = catOn && (!s || catHit || ch.dataset.name.indexOf(s) >= 0);
+      ch.hidden = !hit;
+      if(hit){ hits++; load(ch) }
+    });
+    sec.hidden = !hits;
+    shown += hits;
+  });
+  none.hidden = shown > 0;
+}
+chips.forEach(function(c){ c.addEventListener('click', function(){
+  chips.forEach(function(x){ x.classList.remove('on') });
+  c.classList.add('on'); cur = c.dataset.cat; apply();
+  window.scrollTo({top: 0, behavior: 'smooth'});
+})});
+q.addEventListener('input', apply);
+q.addEventListener('keydown', function(e){ if(e.key === 'Escape'){ q.value = ''; apply() } });
+</script>
+</html>
