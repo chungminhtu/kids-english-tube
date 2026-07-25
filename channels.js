@@ -25,6 +25,7 @@ window.CHANNELS = {
   "🔢 Học ở trường": [
     ["Numberblocks", "UCPlwvN0w4qFSP1FllALB92w", "Học đếm, cộng trừ với các khối số biết nói — chương trình tiểu học Anh."],
     ["TED-Ed", "UCsooa4yRKGN_zEE8iknghZA", "Bài giảng hoạt hình ngắn, giải thích mọi thứ trên đời."],
+    ["Kiwi Quiz", "UCDIsnCNTwiX_Mm0RdW7fM-w", "Chú vẹt Kiwi dẫn các trò đố vui: đoán con vật, đoán bài hát."],
     ["GeoGlobeTales", "UCPKVNqfbunZCkbvjBgf6CdA", "Chuyện thú vị về các nước và trái đất, tiếng Anh dễ nghe."]
   ],
   "🐾 Động vật & thiên nhiên": [
@@ -36,6 +37,7 @@ window.CHANNELS = {
     ["TerraGreen", "UCkYVerz4P_kAZNbDdg2SAeg", "Nuôi và tìm hiểu các loài vật, mỗi video học được một điều mới."],
     ["tanks for nothin", "UCJXxuESjGIaaqb1-IRWFihw", "Làm hồ cá tự chế giá rẻ, xem cá và cây thuỷ sinh lớn lên."],
     ["SerpaDesign", "UCGzXtNdhjPxvCNWFme1bG0g", "Làm tiểu cảnh, hồ cá, terrarium — mang thiên nhiên vào trong nhà."],
+    ["Aquarium Info", "UCkXVK-XrnwznaqYx0aKGAtg", "Khám phá các loài vật rồi xây bể nuôi thật đẹp cho chúng, kiểu STEM vui."],
     ["Fishy Science", "UC41l_Utsx2TEx3LbWFhtO0w", "Giải thích khoa học về cá và cơ thể sống bằng hình vẽ dễ hiểu."]
   ],
   "🔬 Khoa học & thí nghiệm": [
@@ -65,6 +67,8 @@ window.CHANNELS = {
     ["Bobby Duke Arts", "UCSC1HqVmTaE4Shn32ihbC7w", "Biến vật liệu bỏ đi thành tác phẩm, hài hước, hợp trẻ con."],
     ["Uri Tuchman", "UCHsqqRjziUaMwZgQZHw-n1w", "Thợ thủ công vui tính chế máy móc kỳ quặc bằng tay."],
     ["Landen Purifoy", "UCwSaacj6JmPWffsE_3t5Zhw", "Thử và chế các loại nhạc cụ lạ, chơi nhạc trong game."],
+    ["Fisher's Shop", "UCKo6LouIp-TQ1PqxbWNNyAA", "Xưởng gỗ nhỏ tại nhà, tự nhận là kênh sạch cho cả gia đình."],
+    ["Boulder Creek Railroad", "UCjRkUtHQ774mTg1vrQ6uA5A", "Làm mô hình đường sắt và nhà cửa tí hon bằng máy cắt laser."],
     ["Maangchi", "UC8gFadPgK2r1ndqLI04Xvvw", "Dạy nấu món Hàn bằng tiếng Anh, giọng vui, dễ làm theo."]
   ],
   "🎉 Giải trí gia đình": [
@@ -73,6 +77,9 @@ window.CHANNELS = {
     ["Slivki Show", "UC37D-JTE7-V-L-VIrxzzZpQ", "Thí nghiệm và mẹo vặt lạ mắt, lồng tiếng Anh."],
     ["Nelson Boys", "UCRUoeTmOebT9gJ0XVKfY74Q", "Anh em làm tiểu phẩm hài và chơi game, nội dung sạch."],
     ["Jason Maher", "UCPN6irtK3KIT2xUdQYQmh5Q", "Ảo thuật đường phố và vlog vui vẻ."],
+    ["Jamie Nyland", "UCaTzBPf2rmS3ClFbnmOzkqw", "Thử thách và video vui nhộn: làm nhà cho mèo, đồ chơi khổng lồ."],
+    ["The Weenie Family", "UCqU8iHGQ4eYvaH0GUQy3uAg", "Gia đình làm tiểu phẩm hài đời thường, nhẹ nhàng."],
+    ["Daily Dose Of Internet", "UCdC0An4ZPNr_YiFiYoVbwaw", "Tuyển clip thú vị trên mạng, lời bình tiếng Anh ngắn và dễ nghe."],
     ["Payton Delu", "UCv-lQ2yyKXQkdjBrgSS9gxw", "Thành viên Ninja Kidz: thể dục, vượt chướng ngại vật."]
   ],
   "🎮 Game & Roblox": [
