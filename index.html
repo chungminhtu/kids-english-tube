@@ -3,50 +3,54 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>YouTube cho bé</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@400;500;700&display=swap" rel="stylesheet">
 <style>
 :root{color-scheme:light}
 *{box-sizing:border-box}
 body{margin:0;padding:16px 20px 50px;background:#f6fbf6;color:#1f2a22;
- font:16px/1.45 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
-h1{font-size:25px;margin:0;color:#2e7d32;white-space:nowrap}
+ font:18px/1.5 "Lexend Deca",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+h1{font-size:28px;margin:0;color:#2e7d32;white-space:nowrap}
 .bar{position:sticky;top:0;background:#f6fbf6;padding:6px 0 8px;z-index:5;
  border-bottom:2px dashed #b7dfc0;margin-bottom:12px}
 .top{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
-#q{flex:1;min-width:200px;max-width:380px;padding:9px 14px;border:2px solid #a5d6a7;
- border-radius:14px;background:#fff;font-size:16px;font-family:inherit}
+#q{flex:0 0 260px;min-width:180px;padding:9px 14px;border:2px solid #a5d6a7;
+ border-radius:14px;background:#fff;font-size:17px;font-family:inherit}
 #q:focus{outline:none;border-color:#34a853}
-.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;flex:1}
 .chip{border:2px solid #b7dfc0;background:#fff;color:#1f2a22;border-radius:999px;
- padding:8px 15px;font-size:15px;cursor:pointer;font-family:inherit}
+ padding:8px 15px;font-size:16px;cursor:pointer;font-family:inherit}
 .chip:hover{background:#eaf7ec}
 .chip.on{background:#2e7d32;border-color:#2e7d32;color:#fff;box-shadow:0 2px 8px rgba(46,125,50,.35)}
-.chip b{font-weight:700;opacity:.65;font-size:12px}
-section.cat h2{font-size:20px;margin:0 0 12px;padding:6px 12px;border-radius:12px;
+.chip b{font-weight:700;opacity:.65;font-size:13px}
+section.cat h2{font-size:21px;margin:0 0 12px;padding:6px 12px;border-radius:12px;
  background:#e3f2e5;display:inline-block}
-.ch{background:#fff;border:2px solid #e4efe6;border-radius:16px;padding:12px 14px;margin:0 0 12px}
+.ch{background:#fff;border:2px solid #e4efe6;border-radius:16px;padding:10px 14px 12px;margin:0 0 12px}
+.chead{display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;margin-bottom:8px}
 a.cname{font-size:17px;font-weight:700;color:#1b6e2f;text-decoration:none}
 a.cname:hover{text-decoration:underline}
-.desc{color:#55635a;font-size:13px;margin:3px 0 9px}
-.vids{display:flex;gap:12px;flex-wrap:wrap}
-.v{width:224px}
-.v img{width:224px;aspect-ratio:16/9;object-fit:cover;border-radius:12px;background:#e8efe9;display:block}
+.desc{color:#55635a;font-size:13px}
+.vids{display:flex;gap:14px;flex-wrap:wrap}
+.v{width:420px}
+.v img{width:420px;aspect-ratio:16/9;object-fit:cover;border-radius:14px;background:#e8efe9;display:block}
 .v img:hover{outline:3px solid #34a853}
 .v a{text-decoration:none}
-.v .t{display:block;font-size:14px;margin:5px 0 0;color:#1f2a22}
+.v .t{display:block;font-size:15px;margin:6px 0 0;color:#1f2a22}
 .v a:hover .t{color:#1b6e2f;text-decoration:underline}
 .v .en{display:block;font-size:12px;color:#7d8a81;margin-top:2px}
 .v .d{font-size:12px;color:#9aa79f}
-.skel{width:224px;height:126px;border-radius:12px;background:#eef4ef}
+.skel{width:420px;height:236px;border-radius:14px;background:#eef4ef}
 .err{color:#c04b4b;font-size:13px}
-#none{color:#7d8a81}
+#none{color:#7d8a81;font-size:17px}
 </style>
 
 <div class="bar">
   <div class="top">
     <h1>📺 YouTube cho bé</h1>
     <input id="q" type="search" placeholder="Tìm kênh...">
+    <div class="chips" id="chips"></div>
   </div>
-  <div class="chips" id="chips"></div>
 </div>
 <p id="none" hidden>Không có kênh nào khớp.</p>
 <div id="body"></div>
@@ -144,19 +148,20 @@ function translate(texts){
   }).catch(function(){ return texts });
 }
 
+function viDate(d){ var p = String(d).split('-'); return p.length === 3 ? p[2] + '/' + p[1] + '/' + p[0] : d }
 function esc(s){ return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/"/g,'&quot;') }
 function card(v, vi){
   return '<div class="v"><a href="https://www.youtube.com/watch?v=' + v.id +
     '" target="_blank" rel="noreferrer"><img loading="lazy" src="' + v.thumb + '" alt="">' +
     '<span class="t">' + esc(vi || v.title) + '</span>' +
     (vi && vi !== v.title ? '<span class="en">' + esc(v.title) + '</span>' : '') +
-    '</a><span class="d">' + esc(v.published) + '</span></div>';
+    '</a><span class="d">' + esc(viDate(v.published)) + '</span></div>';
 }
 function chRow(c){
   return '<div class="ch" data-cid="' + c[1] + '">' +
-    '<a class="cname" href="https://www.youtube.com/channel/' + c[1] +
+    '<div class="chead"><a class="cname" href="https://www.youtube.com/channel/' + c[1] +
     '" target="_blank" rel="noreferrer">' + esc(c[0]) + '</a>' +
-    '<p class="desc">' + esc(c[2] || '') + '</p>' +
+    '<span class="desc">' + esc(c[2] || '') + '</span></div>' +
     '<div class="vids">' + new Array(PER_CHANNEL + 1).join('<div class="skel"></div>') + '</div></div>';
 }
 
