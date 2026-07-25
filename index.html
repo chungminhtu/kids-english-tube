@@ -2,6 +2,7 @@
 <html lang="vi">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache">
 <title>YouTube cho bé</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -10,7 +11,10 @@
 :root{color-scheme:light;--f1:20px;--f2:14px}
 *{box-sizing:border-box}
 body{margin:0;padding:16px 20px 50px;background:#f6fbf6;color:#1f2a22;
- font:var(--f2)/1.5 "Lexend Deca",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif}
+ font-family:"Lexend Deca",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+ font-size:var(--f2);line-height:1.5}
+/* khong co co chu nao khac ngoai --f1 va --f2 */
+*{font-size:inherit;font-family:inherit}
 h1{font-size:var(--f1);margin:0;color:#2e7d32;white-space:nowrap}
 .bar{position:sticky;top:0;background:#f6fbf6;padding:6px 0 8px;z-index:5;
  border-bottom:2px dashed #b7dfc0;margin-bottom:12px}
@@ -55,7 +59,7 @@ a.cname:hover{text-decoration:underline}
 <p id="none" hidden>Không có kênh nào khớp.</p>
 <div id="body"></div>
 
-<script src="channels.js"></script>
+<script>document.write('<script src="channels.js?v=' + Math.floor(Date.now()/6e5) + '"><\/script>')</script>
 <script>
 var PER_CHANNEL = 10;
 var CACHE_MS = 60 * 60 * 1000;      // nho video 1 gio, F5 khong goi proxy lai
