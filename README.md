@@ -1,35 +1,32 @@
 # kids-english-tube
 
-A hand-picked board of **English-speaking YouTube channels for kids**, grouped by topic.
-Open the page, everything is already expanded: every topic, every channel, and the
-**5 newest videos** of each channel — fetched live from YouTube every time the page loads.
+A hand-picked board of **English-speaking YouTube channels a child can watch alone**,
+grouped by topic. Pick a topic, see every channel in it with its **10 newest videos** —
+fetched live from YouTube on every page load. Video titles are auto-translated to
+Vietnamese in the browser. UI is Vietnamese.
 
 **Live page:** https://chungminhtu.github.io/kids-english-tube/
 
-Interface is in Vietnamese (built for a Vietnamese family learning English).
+## How channels were picked
 
-## Why this list
+- **Spoken English only** — no Vietnamese / Korean / Chinese / Japanese-language channels,
+  and no silent ones (ASMR, art timelapse, instrumental music, wordless process videos).
+  They teach no listening.
+- **Child-watchable and child-understandable**, judged from each channel's own About text —
+  not its name. So no adult channels (medical animation, professional machining, adult ESL
+  courses), no teacher/parent-facing channels, no prank, reaction or hype channels.
+- Result: 10 topics, 56 channels. There is no "ask a parent first" tier — if a channel
+  needed one, it was dropped.
 
-Picked so that a child actually *hears English*:
+## Nothing about videos is stored here
 
-- English spoken out loud — no Vietnamese / Korean / Chinese / Japanese-language channels.
-- No silent channels: no ASMR, no art timelapse, no instrumental music, no wordless
-  "manufacturing process" or silent build videos. They look nice and teach no listening.
-- Two labels: **TỰ XEM** (fine on their own) and **XEM TRƯỚC** (a parent should watch first —
-  ads, hype, pranks, power tools).
+`channels.js` holds names, channel ids and a one-line Vietnamese description each. Titles,
+thumbnails and dates come from YouTube's public RSS feed at page load; Vietnamese titles come
+from a translation call in the browser. No API key, no login, no build step, no tracking.
 
-12 topics, 97 channels: kids' English, English practice, school subjects, animals & nature,
-science & experiments, space, diving & fishing, camping, making & crafts, cooking,
-family entertainment, gaming.
-
-## No video data is stored here
-
-The only data in this repo is `channels.js` — names, channel ids, labels. Video titles,
-thumbnails and dates are pulled at page load from YouTube's public RSS feed
-(`/feeds/videos.xml?channel_id=…`). No API key, no login, no build step, no tracking.
-
-Browsers can't call that feed directly (no CORS headers), so the static page routes it
-through a public CORS proxy, with two fallbacks if the first is down.
+Browsers can't read that feed directly (no CORS headers), so the page tries 6 public proxies
+in turn. Feeds are cached in `localStorage` for 1 hour and translations are kept indefinitely,
+so a reload costs no network calls. The chosen topic and search text survive a reload too.
 
 ## Run it locally (optional, faster)
 
@@ -39,12 +36,12 @@ python3 kids_yt.py --lan     # also open it from a phone/iPad on the same wifi
 python3 kids_yt.py --selftest
 ```
 
-The page detects the local server and uses it instead of the public proxy — same UI, plus a
-6-hour on-disk cache. Python 3 standard library only, no dependencies.
+The page detects the local server and uses it instead of the public proxies, with a 6-hour
+on-disk cache. Python 3 standard library only, no dependencies.
 
 ## Edit the list
 
-`channels.js` is plain data: `"topic": [[name, channelId, "OK" | "WATCH"], …]`.
-Add or drop a line, reload the page. Channel id is the `UC…` string in a channel URL.
+`channels.js` is plain data: `"topic": [[name, channelId, "mô tả tiếng Việt"], …]`.
+Add or remove a line and reload. The channel id is the `UC…` string in a channel URL.
 
 MIT licensed. Channel names and thumbnails belong to their creators.

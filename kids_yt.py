@@ -30,7 +30,7 @@ FEED = "https://www.youtube.com/feeds/videos.xml?channel_id={}"
 NS = {"a": "http://www.w3.org/2005/Atom", "m": "http://search.yahoo.com/mrss/",
       "yt": "http://www.youtube.com/xml/schemas/2015"}
 TTL = 6 * 3600
-PER_CHANNEL = 5
+PER_CHANNEL = 10
 CACHE_FILE = os.path.expanduser("~/Library/Caches/kids_yt_feeds.json")
 STATIC = {"/": ("index.html", "text/html; charset=utf-8"),
           "/index.html": ("index.html", "text/html; charset=utf-8"),
