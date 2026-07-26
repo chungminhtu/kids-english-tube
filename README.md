@@ -18,7 +18,7 @@ Vietnamese in the browser. UI is Vietnamese.
 - **Real people, real speech.** Vlogs, builds, camping, fishing, real jobs, real
   challenges. No songs, no nursery rhymes, no cartoons, no story animation, no scripted
   ESL lessons — those teach a rehearsed English a child never hears in life.
-- Result: 14 topics, 82 channels. There is no "ask a parent first" tier — if a channel
+- Result: 11 topics, 81 channels — 5 to 10 per topic, no filler. There is no "ask a parent first" tier — if a channel
   needed one, it was dropped.
 
 ## Nothing about videos is stored here

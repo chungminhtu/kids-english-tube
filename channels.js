@@ -130,7 +130,7 @@ window.CHANNELS = {
       "Sống trên thuyền ở Key West: sửa thuyền, câu cá, đi biển."
     ]
   ],
-  "🐾 Động vật thật": [
+  "🐾 Động vật & thiên nhiên": [
     [
       "Animal Wonders Montana",
       "UC1Nj4gkoi_n5eCcrKCVOXKA",
@@ -170,23 +170,11 @@ window.CHANNELS = {
       "SerpaDesign",
       "UCGzXtNdhjPxvCNWFme1bG0g",
       "Làm tiểu cảnh và hồ cá, mang thiên nhiên vào trong nhà."
-    ]
-  ],
-  "🎥 Phim thiên nhiên": [
+    ],
     [
       "BBC Earth",
       "UCwmZiChSryoWQCZMIQezgTg",
       "Phim thiên nhiên BBC, lời bình tiếng Anh chuẩn."
-    ],
-    [
-      "National Geographic",
-      "UCpVm7bg6pXKo1Pr6k5kxG9A",
-      "Phim khám phá: động vật, thám hiểm, con người."
-    ],
-    [
-      "Nat Geo Kids",
-      "UCXVCgDuD_QCkI7gTKU7-tpg",
-      "Bản dành cho trẻ của National Geographic."
     ],
     [
       "Deep Look",
@@ -226,11 +214,6 @@ window.CHANNELS = {
       "Xưởng gỗ nhỏ tại nhà, kênh sạch cho cả gia đình."
     ],
     [
-      "Boulder Creek Railroad",
-      "UCjRkUtHQ774mTg1vrQ6uA5A",
-      "Làm mô hình đường sắt và nhà tí hon bằng máy cắt laser."
-    ],
-    [
       "Landen Purifoy",
       "UCwSaacj6JmPWffsE_3t5Zhw",
       "Thử và chế các loại nhạc cụ lạ, nói chuyện tự nhiên."
@@ -266,6 +249,11 @@ window.CHANNELS = {
       "Martijn Doolaard",
       "UClkUhTjFbQbtGfS14h9Vw5g",
       "Sửa hai căn nhà đá trên núi Alps, quay đẹp, kể chậm."
+    ],
+    [
+      "Tiny House Giant Journey",
+      "UCE7GmAYeBVgqDItdX2ihuHQ",
+      "Jenna đi thăm nhà nhỏ và nhà xe khắp nơi, phỏng vấn chủ nhà."
     ]
   ],
   "✈️ Du lịch & gia đình": [
@@ -315,9 +303,19 @@ window.CHANNELS = {
       "Nick DiGiovanni",
       "UCMyOj6fhvKFMjxUCp3b_3gA",
       "Đầu bếp trẻ nấu món khổng lồ, nói nhanh vừa phải, sạch sẽ."
+    ],
+    [
+      "Chef Jean-Pierre",
+      "UCLGNeElk4sNgzUrZr0c9krA",
+      "Bếp trưởng người Pháp vui tính, nói chậm, giải thích từng bước."
+    ],
+    [
+      "emmymade",
+      "UCzqbfYjQmf9nLQPMxVgPhiA",
+      "Cô Emmy thử các món lạ và đồ hộp cũ, giọng nhẹ nhàng dễ nghe."
     ]
   ],
-  "🔬 Khoa học đời thật": [
+  "🔬 Khoa học & vũ trụ": [
     [
       "Mark Rober",
       "UCY1kMZp36IQSyNx_9h4mpCg",
@@ -342,9 +340,24 @@ window.CHANNELS = {
       "TheDadLab",
       "UCc_-hy0u9-oKlNdMKHBudcQ",
       "Ông bố làm thí nghiệm với hai con ngay tại bếp."
+    ],
+    [
+      "NASA",
+      "UCLA_DiR1FfKNvjuUpBHmylQ",
+      "Phi hành gia thật nói chuyện từ trạm vũ trụ, phóng tên lửa."
+    ],
+    [
+      "SpaceX",
+      "UCtI0Hodo5o5dUb67FeUjDeA",
+      "Phóng tên lửa và tàu Starship, có bình luận trực tiếp."
+    ],
+    [
+      "Astrum",
+      "UC-9b7aDP6ZN0coj9-xFnrtw",
+      "Kể về hành tinh và vũ trụ bằng giọng chậm rãi."
     ]
   ],
-  "🏆 Thử thách & thể thao": [
+  "🏆 Thử thách & giải trí": [
     [
       "Dude Perfect",
       "UCRijo3ddMTht_IHyNSNXpNQ",
@@ -374,6 +387,21 @@ window.CHANNELS = {
       "Jason Maher",
       "UCPN6irtK3KIT2xUdQYQmh5Q",
       "Ảo thuật ngoài đường, nói chuyện với người lạ — hội thoại thật."
+    ],
+    [
+      "Vat19",
+      "UCDRbNGFusqlXX4a5vwi9ouQ",
+      "Giới thiệu đồ chơi và món kỳ lạ bằng quảng cáo hài hước."
+    ],
+    [
+      "Slivki Show",
+      "UC37D-JTE7-V-L-VIrxzzZpQ",
+      "Thí nghiệm và mẹo vặt lạ mắt, lồng tiếng Anh."
+    ],
+    [
+      "Daily Dose Of Internet",
+      "UCdC0An4ZPNr_YiFiYoVbwaw",
+      "Tuyển clip có thật trên mạng, lời bình ngắn dễ nghe."
     ]
   ],
   "🎮 Game": [
@@ -386,11 +414,6 @@ window.CHANNELS = {
       "StacyPlays",
       "UC2c6FqF4olAZ7LodVEUueNQ",
       "Chơi Minecraft nhẹ nhàng, nhiều chó và động vật."
-    ],
-    [
-      "Ali-A Blox",
-      "UCD7zDSR3U8R4-FWCykVTT1w",
-      "Ali-A chơi Roblox, nói suốt trận."
     ],
     [
       "Techys",
@@ -406,40 +429,6 @@ window.CHANNELS = {
       "Avocado Playz",
       "UCqA5tXN003u-18CKSICLDdg",
       "Chơi Roblox cùng nhóm bạn."
-    ]
-  ],
-  "🚀 Vũ trụ": [
-    [
-      "NASA",
-      "UCLA_DiR1FfKNvjuUpBHmylQ",
-      "Phi hành gia thật nói chuyện từ trạm vũ trụ, phóng tên lửa."
-    ],
-    [
-      "SpaceX",
-      "UCtI0Hodo5o5dUb67FeUjDeA",
-      "Phóng tên lửa và tàu Starship, có bình luận trực tiếp."
-    ],
-    [
-      "Astrum",
-      "UC-9b7aDP6ZN0coj9-xFnrtw",
-      "Kể về hành tinh và vũ trụ bằng giọng chậm rãi."
-    ]
-  ],
-  "🎉 Giải trí": [
-    [
-      "Vat19",
-      "UCDRbNGFusqlXX4a5vwi9ouQ",
-      "Giới thiệu đồ chơi và món kỳ lạ bằng quảng cáo hài hước."
-    ],
-    [
-      "Slivki Show",
-      "UC37D-JTE7-V-L-VIrxzzZpQ",
-      "Thí nghiệm và mẹo vặt lạ mắt, lồng tiếng Anh."
-    ],
-    [
-      "Daily Dose Of Internet",
-      "UCdC0An4ZPNr_YiFiYoVbwaw",
-      "Tuyển clip có thật trên mạng, lời bình ngắn dễ nghe."
     ]
   ]
 };
