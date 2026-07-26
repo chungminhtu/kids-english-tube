@@ -15,7 +15,10 @@ Vietnamese in the browser. UI is Vietnamese.
 - **Child-watchable and child-understandable**, judged from each channel's own About text —
   not its name. So no adult channels (medical animation, professional machining, adult ESL
   courses), no teacher/parent-facing channels, no prank, reaction or hype channels.
-- Result: 13 topics, 92 channels. There is no "ask a parent first" tier — if a channel
+- **Real people, real speech.** Vlogs, builds, camping, fishing, real jobs, real
+  challenges. No songs, no nursery rhymes, no cartoons, no story animation, no scripted
+  ESL lessons — those teach a rehearsed English a child never hears in life.
+- Result: 14 topics, 82 channels. There is no "ask a parent first" tier — if a channel
   needed one, it was dropped.
 
 ## Nothing about videos is stored here

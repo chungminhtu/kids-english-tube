@@ -1,218 +1,155 @@
-// Curated list: kid-friendly, English-SPOKEN YouTube channels, grouped by topic.
+// Curated list: real people speaking natural, unscripted English on camera.
 // [channel name, channelId, one-line Vietnamese description]
-// Rule: a child must be able to watch it alone AND understand it. No adult channels,
-// no teacher/parent-facing channels, no prank/reaction/hype channels, no silent
-// channels (ASMR, timelapse art, instrumental music, wordless process videos).
-// Nursery topics are ordered: real people first, then cartoons, then formal lessons.
+// Kept: vlogs, builds, camping, fishing, real jobs, real challenges, real talk.
+// Dropped on purpose: songs, nursery rhymes, cartoons, story animation, scripted
+// ESL lessons, teacher/parent-facing channels, silent channels, prank/hype channels.
 window.CHANNELS = {
-  "🔤 Tiếng Anh cho bé": [
+  "🪓 Dựng nhà gỗ & sống trong rừng": [
     [
-      "Blippi",
-      "UC5PYHgAzJ1wLEidB58SK6Xw",
-      "Người thật — Blippi khám phá xe cộ, sân chơi, nghề nghiệp, nói chậm và rõ."
+      "Madison Clysdale",
+      "UCqpNHx_gjAV70G-H1jZMpOg",
+      "Cô gái Canada tự dựng nhà gỗ trong rừng, vừa làm vừa kể chuyện."
     ],
     [
-      "Ms Rachel",
-      "UCG2CL6EUjG8TVT1Tpl9nJdg",
-      "Người thật — cô Rachel dạy nói và hát từ đầu tiên, cực chậm và rõ."
+      "Shawn James - My Self Reliance",
+      "UCoHM0Pk9AODJdsaPb16_f9g",
+      "Dựng nhà gỗ một mình giữa rừng Canada, giọng kể chậm rãi."
     ],
     [
-      "Happy Toddler Learning with Miss Kaye",
-      "UCD3bwepnHLJLhfXnnlV7wqw",
-      "Người thật — cô giáo mầm non Mỹ dạy từ vựng và bộ phận cơ thể."
+      "TA Outdoors",
+      "UC2SMpy2oZV6BoyJEYShw9bw",
+      "Mike người Anh dựng lều gỗ, hầm trú, kể từng bước bằng tiếng Anh rõ."
     ],
     [
-      "Paisley's Corner",
-      "UCdZ93zOnstul7Yj86I1m1Sg",
-      "Người thật — cô Miss Lily chơi và học cùng bé: khủng long, chữ cái, màu sắc."
+      "Bushradical",
+      "UCo698VL13Dip93yh0f4Rc5Q",
+      "Dựng cabin nhỏ giá rẻ ở Alaska, giải thích cách làm."
     ],
     [
-      "Kiddos World TV",
-      "UCRaC_9WVNkT7D4XJrK713Mw",
-      "Người thật — cô Miss V dạy từ vựng và con vật."
+      "KYLES CABIN",
+      "UCQg-pwg0aUVsz8ibp6LWTjQ",
+      "Anh Kyle và gia đình làm cabin off-grid ở Minnesota."
     ],
     [
-      "JD Learning Crew",
-      "UCr-R3q4UZDaEy6ynjBTB7mg",
-      "Người thật — bài học vui và trò chơi đố cho trẻ tiểu học."
+      "The Outsider",
+      "UChehL6PYmucEHUS6g2LVFGA",
+      "Hai bố con dựng cabin trong rừng, quay đẹp, kể tự nhiên."
     ],
     [
-      "Maple Leaf Learning",
-      "UCdHK6g8ddMEcMu9B3LgeKYg",
-      "Bài học — tiếng Anh đơn giản cho bé mới bắt đầu, nhắc lại nhiều lần."
+      "Kris Harbour Natural Building",
+      "UC5rT7F0PGNuD54rJ9kzgWzw",
+      "Xây nhà bằng gỗ và đất, làm điện nước tự cấp ở xứ Wales."
     ],
     [
-      "English Singsing",
-      "UCGwA4GjY4nGMIYvaJiA0EGA",
-      "Bài học — từ vựng và mẫu câu cho trẻ mới bắt đầu."
+      "Simple Living Alaska",
+      "UC3FHvW16m_i117IqPnb0nmA",
+      "Hai vợ chồng sống tự cấp ở Alaska, nói chuyện đời thường."
     ],
     [
-      "King English Kids",
-      "UCdwze3M1-HD3-UxesvnKpFA",
-      "Bài học — bài hát chữ cái, xe cộ, số đếm cho bé mẫu giáo."
-    ],
-    [
-      "English Paradise Kids",
-      "UC1THeiEwEW3N02ZmqmDKquQ",
-      "Bài học — con vật, xe cộ, từ vựng cơ bản."
+      "Acorn Land Labs",
+      "UC59iSsej2g7O1sRryEpZ2fg",
+      "Cải tạo đất rừng, làm ao, dựng công trình nhỏ."
     ]
   ],
-  "🎵 Bài hát & vần điệu": [
+  "⛺ Cắm trại & sinh tồn": [
     [
-      "Super Simple Songs",
-      "UCLsooMJoIpl_7ux2jvdPB-Q",
-      "Bài hát thiếu nhi lời chậm, đơn giản — chuẩn mực cho lớp mầm non."
+      "Joe Robinet",
+      "UCts-8ZqS339n-9nxy3DN8Cg",
+      "Cắm trại một mình cùng chú chó, nói chuyện với máy quay suốt chuyến đi."
     ],
     [
-      "Bounce Patrol",
-      "UC56cowXhoqRWHeqfSJkIQaA",
-      "Người thật — nhóm bạn hát và nhảy các bài thiếu nhi tiếng Anh."
+      "Steve Wallis",
+      "UCSnqXeK94-iNmwqGO__eJ5g",
+      "Cắm trại kiểu lén lút, hài hước, tiếng Anh Canada dễ nghe."
     ],
     [
-      "Mother Goose Club",
-      "UCJkWoS4RsldA1coEIot5yDA",
-      "Người thật hoá trang hát đồng dao tiếng Anh kinh điển."
+      "Coalcracker Bushcraft",
+      "UCXSVZTsqJn5JjN0h5q5_B_Q",
+      "Kỹ năng rừng núi: dựng trại, nhóm lửa, đọc thời tiết."
     ],
     [
-      "Jack Hartmann",
-      "UCVcQH8A634mauPrGbWs7QlQ",
-      "Thầy Jack vừa hát vừa vận động: chữ cái, số đếm, phát âm."
+      "Kent Survival",
+      "UC-HFqs_7nzHwg1pD-_PrLcw",
+      "Cắm trại mưa gió ở Anh, dựng lều tăng, nấu ăn ngoài trời."
     ],
     [
-      "The Kiboomers",
-      "UCLy6-72NzYpFztbJ7jNEMkg",
-      "Bài hát vui dạy màu sắc, con vật, thói quen hằng ngày."
+      "Corporals Corner",
+      "UCX1ztT76CZfs29aGK9Nn7_A",
+      "Mẹo sinh tồn đơn giản, giọng Mỹ chậm và rõ."
     ],
     [
-      "Gracie's Corner",
-      "UCQ2FzqIvWSE7ysvL1sLWQ5Q",
-      "Đồng dao nhịp điệu vui tươi, hình vẽ dễ thương."
+      "Xander Budnick",
+      "UCDoJIpPvtEwFvfNXsZvCqKw",
+      "Đi bộ đường dài và cắm trại khắp nơi, kể như tâm sự."
     ],
     [
-      "Dream English Kids",
-      "UC6LKuH7RPkvRmzS9-8URtqA",
-      "Bài hát tiếng Anh bắt tai, cả nhà hát theo được."
+      "Going Solo",
+      "UCw0c1U1T0KAsRroZz9yk08Q",
+      "Đi bộ, chèo thuyền, cắm trại một mình giữa thiên nhiên."
     ],
     [
-      "LankyBox Go!",
-      "UCBth_LGMSh68e1mpjm_6Jug",
-      "Bài hát và phim ngắn chính thức của LankyBox."
+      "Ed Stafford",
+      "UCuhWbavmdpho8aKJ0Q0M7SA",
+      "Nhà thám hiểm từng đi bộ dọc Amazon, thử thách sinh tồn thật."
     ]
   ],
-  "📖 Truyện & hoạt hình": [
+  "🎣 Câu cá & đi biển": [
     [
-      "Vooks - Read Alouds for Kids",
-      "UCGfA6UdZEmpIwBZ4btAKkgA",
-      "Sách thiếu nhi kể thành phim, đọc chuẩn, không quảng cáo, cho bé 2-8 tuổi."
+      "Outdoor Boys",
+      "UCfpCQ89W9wjkHc8J_6eTbBg",
+      "Ông bố Luke dẫn ba con đi câu, cắm trại, đào hang tuyết — rất hợp trẻ."
     ],
     [
-      "Little Fox - Kids Stories and Songs",
-      "UCXRPWm72nrs5sK7fNTSXZrw",
-      "Truyện và bài hát tiếng Anh, chia theo cấp độ dễ đến khó."
+      "DALLMYD",
+      "UCI4fHQkguBNW3SwTqmehzjw",
+      "Thợ lặn tìm đồ dưới đáy sông hồ, kể lại từng lần lặn."
     ],
     [
-      "English Fairy Tales and Stories",
-      "UC53qnQM3rSPxiyInxP0TGnA",
-      "Truyện cổ tích kinh điển kể bằng tiếng Anh."
+      "Jonathan Bird's Blue World",
+      "UCFH-Qa1s6rQRTrQjFg8N84Q",
+      "Nhà quay phim biển dẫn đi lặn xem cá mập, rùa, san hô."
     ],
     [
-      "A Story",
-      "UCOHdngJoE5bPDycsRLzoGwg",
-      "Truyện cổ tích hoạt hình nhiều màu sắc cho trẻ."
+      "Fisherman's Life",
+      "UCC7WFw42VnywQRvewSq29eg",
+      "Câu cá, cắm trại và nấu ngay tại bờ, nói chuyện suốt video."
     ],
     [
-      "Gigglebox",
-      "UCmnlBrE7TCf3wkrwd6mxPrQ",
-      "Phim hoạt hình thiếu nhi Úc, lời kể rõ ràng."
+      "Outdoor Chef Life",
+      "UCNqpN335uVY9Sx_ZK_WuOAA",
+      "Câu được cá gì nấu món đó ngay ngoài trời."
     ],
     [
-      "Alphablocks",
-      "UC_qs3c0ehDvZkbiEbOj6Drg",
-      "Các khối chữ cái ghép thành từ — dạy ghép vần tiếng Anh."
+      "Rodrigo Silva",
+      "UC0WjNicr4ZY4wlbsWo6XSdw",
+      "Lặn ống thở khám phá sông suối trong veo ở châu Á."
     ],
     [
-      "Colourblocks",
-      "UCQkuKPaVlYK7QCIVTb0lV2Q",
-      "Các khối màu dạy màu sắc và cách pha màu."
+      "Key West Waterman",
+      "UCjgslOGBJ_cjLr7FGkMp82Q",
+      "Sống trên thuyền ở Key West: sửa thuyền, câu cá, đi biển."
     ]
   ],
-  "🔢 Học ở trường": [
-    [
-      "Numberblocks",
-      "UCPlwvN0w4qFSP1FllALB92w",
-      "Học đếm, cộng trừ với các khối số biết nói — chương trình tiểu học Anh."
-    ],
-    [
-      "TED-Ed",
-      "UCsooa4yRKGN_zEE8iknghZA",
-      "Bài giảng hoạt hình ngắn, giải thích mọi thứ trên đời."
-    ],
-    [
-      "Homeschool Pop",
-      "UCfPyVJEBD7Di1YYjTdS2v8g",
-      "Bài học ngắn về khoa học, lịch sử, địa lý cho tiểu học."
-    ],
-    [
-      "Free School",
-      "UCebMFnw6WxozGmqGekJHOJg",
-      "Giới thiệu lịch sử, nghệ thuật, khoa học cho trẻ nhỏ."
-    ],
-    [
-      "Crash Course Kids",
-      "UCONtPx56PSebXJOxbFv-2jQ",
-      "Khoa học tiểu học, mỗi bài vài phút, hình minh hoạ rõ."
-    ],
-    [
-      "Learn Bright",
-      "UCKCsVSA5THlkHbnkZTPm6-g",
-      "Bài giảng theo từng môn, giọng đọc rõ, có ví dụ."
-    ],
-    [
-      "Kids Learning Tube",
-      "UC7EFWpvc1wYuUwrtZ_BLi9A",
-      "Hát để nhớ hành tinh, cơ thể người, các nước trên thế giới."
-    ],
-    [
-      "GeoGlobeTales",
-      "UCPKVNqfbunZCkbvjBgf6CdA",
-      "Chuyện thú vị về các nước và trái đất, tiếng Anh dễ nghe."
-    ],
-    [
-      "Kiwi Quiz",
-      "UCDIsnCNTwiX_Mm0RdW7fM-w",
-      "Chú vẹt Kiwi dẫn các trò đố vui: đoán con vật, đoán bài hát."
-    ]
-  ],
-  "🐾 Động vật & thiên nhiên": [
-    [
-      "Deep Look",
-      "UC-3SbfTPJsL8fJAPKiVqBLg",
-      "Quay siêu cận cảnh côn trùng và sinh vật nhỏ, do đài KQED/PBS làm."
-    ],
-    [
-      "BBC Earth",
-      "UCwmZiChSryoWQCZMIQezgTg",
-      "Phim thiên nhiên của BBC: động vật hoang dã khắp hành tinh."
-    ],
-    [
-      "Nat Geo Kids",
-      "UCXVCgDuD_QCkI7gTKU7-tpg",
-      "National Geographic bản cho trẻ: động vật và khoa học mỗi tuần."
-    ],
-    [
-      "National Geographic",
-      "UCpVm7bg6pXKo1Pr6k5kxG9A",
-      "Phim khám phá: động vật, thám hiểm, khoa học."
-    ],
-    [
-      "MinuteEarth",
-      "UCeiYXex_fwgYDonaTcSIk6w",
-      "Hoạt hình ngắn giải thích chuyện của trái đất và thiên nhiên."
-    ],
+  "🐾 Động vật thật": [
     [
       "Animal Wonders Montana",
       "UC1Nj4gkoi_n5eCcrKCVOXKA",
-      "Trung tâm cứu hộ giới thiệu từng con vật thật và cách chăm sóc."
+      "Người chăm sóc giới thiệu từng con vật cứu hộ, nói trực tiếp với máy quay."
+    ],
+    [
+      "The Cincinnati Zoo & Botanical Garden",
+      "UCE3VoxyYmyQCReOXk2ogsVg",
+      "Nhân viên sở thú kể chuyện từng con vật, có buổi phát trực tiếp."
+    ],
+    [
+      "The Dodo",
+      "UCINb0wqPz-A0dV9nARjJlOQ",
+      "Chuyện có thật về cứu hộ động vật, người trong cuộc kể lại."
+    ],
+    [
+      "Monterey Bay Aquarium",
+      "UCnM5iMGiKsZg-iOlIO2ZkdQ",
+      "Thuỷ cung Mỹ: sinh vật biển, giờ cho ăn, camera dưới nước."
     ],
     [
       "TerraGreen",
@@ -227,147 +164,41 @@ window.CHANNELS = {
     [
       "tanks for nothin",
       "UCJXxuESjGIaaqb1-IRWFihw",
-      "Làm hồ cá tự chế giá rẻ, xem cá và cây thuỷ sinh lớn lên."
+      "Làm hồ cá tự chế giá rẻ, vừa làm vừa giải thích."
     ],
     [
       "SerpaDesign",
       "UCGzXtNdhjPxvCNWFme1bG0g",
-      "Làm tiểu cảnh, hồ cá, terrarium — mang thiên nhiên vào trong nhà."
+      "Làm tiểu cảnh và hồ cá, mang thiên nhiên vào trong nhà."
     ]
   ],
-  "🔬 Khoa học & thí nghiệm": [
+  "🎥 Phim thiên nhiên": [
     [
-      "Mark Rober",
-      "UCY1kMZp36IQSyNx_9h4mpCg",
-      "Cựu kỹ sư NASA làm thí nghiệm và máy móc khổng lồ, rất vui."
+      "BBC Earth",
+      "UCwmZiChSryoWQCZMIQezgTg",
+      "Phim thiên nhiên BBC, lời bình tiếng Anh chuẩn."
     ],
     [
-      "SciShow Kids",
-      "UCRFIPG2u1DxKLNuE3y2SjHA",
-      "Trả lời câu hỏi khoa học của trẻ bằng thí nghiệm đơn giản."
+      "National Geographic",
+      "UCpVm7bg6pXKo1Pr6k5kxG9A",
+      "Phim khám phá: động vật, thám hiểm, con người."
     ],
     [
-      "Peekaboo Kidz",
-      "UCxlJ45KjG4XVcQ_hd8j227A",
-      "Dr. Binocs giải thích mọi thứ bằng hoạt hình ngắn."
+      "Nat Geo Kids",
+      "UCXVCgDuD_QCkI7gTKU7-tpg",
+      "Bản dành cho trẻ của National Geographic."
     ],
     [
-      "Operation Ouch",
-      "UCQJDFI9j8UeNoqra37p5OkA",
-      "Hai bác sĩ vui tính khám phá cơ thể người — chương trình CBBC."
-    ],
-    [
-      "Maddie Moate",
-      "UCQ0_JQL4wdQd-Xe5hC4PwTg",
-      "Người thật — Maddie khám phá thiên nhiên và đồ vật quanh nhà."
-    ],
-    [
-      "TheDadLab",
-      "UCc_-hy0u9-oKlNdMKHBudcQ",
-      "Ông bố làm thí nghiệm đơn giản cùng hai con ngay tại nhà."
-    ],
-    [
-      "The Slow Mo Guys",
-      "UCUK0HBIBWgM2c4vsPhkYY4w",
-      "Quay siêu chậm mọi thứ vỡ, nổ, bắn tung — nhìn là mê."
-    ],
-    [
-      "Fun Science",
-      "UCTn0kzSoLyz6r6H-psXmgjA",
-      "Thí nghiệm khoa học dễ làm, thủ công và mẹo vặt."
-    ],
-    [
-      "Jared Owen",
-      "UCbsfyGlrjrKQC0gbzK0-EiA",
-      "Hoạt hình 3D giải thích máy móc và toà nhà hoạt động thế nào."
-    ],
-    [
-      "Fishy Science",
-      "UC41l_Utsx2TEx3LbWFhtO0w",
-      "Giải thích khoa học về cá và cơ thể sống bằng hình vẽ dễ hiểu."
+      "Deep Look",
+      "UC-3SbfTPJsL8fJAPKiVqBLg",
+      "Quay siêu cận cảnh côn trùng và sinh vật nhỏ, do KQED/PBS làm."
     ]
   ],
-  "🚀 Vũ trụ & tên lửa": [
-    [
-      "NASA",
-      "UCLA_DiR1FfKNvjuUpBHmylQ",
-      "Kênh chính thức của NASA: phi hành gia, tên lửa, trạm vũ trụ."
-    ],
-    [
-      "SpaceX",
-      "UCtI0Hodo5o5dUb67FeUjDeA",
-      "Kênh chính thức của SpaceX: phóng tên lửa và tàu Starship."
-    ],
-    [
-      "Astrum",
-      "UC-9b7aDP6ZN0coj9-xFnrtw",
-      "Giải thích hệ mặt trời, hành tinh, vũ trụ bằng lời kể chậm rãi."
-    ],
-    [
-      "Miwu Science",
-      "UCERpfFL1aRqsrJhmKkGAEPA",
-      "Kiến thức khoa học vui, làm riêng để trẻ thích khoa học."
-    ]
-  ],
-  "🤿 Biển & câu cá": [
-    [
-      "Jonathan Bird's Blue World",
-      "UCFH-Qa1s6rQRTrQjFg8N84Q",
-      "Nhà quay phim biển dẫn bé đi lặn xem cá mập, rùa, san hô."
-    ],
-    [
-      "Monterey Bay Aquarium",
-      "UCnM5iMGiKsZg-iOlIO2ZkdQ",
-      "Thuỷ cung Mỹ: sinh vật biển, giờ cho ăn, camera dưới nước."
-    ],
-    [
-      "DALLMYD",
-      "UCI4fHQkguBNW3SwTqmehzjw",
-      "Thợ lặn đi tìm đồ vật dưới đáy sông hồ, nhiều bất ngờ."
-    ],
-    [
-      "Rodrigo Silva",
-      "UC0WjNicr4ZY4wlbsWo6XSdw",
-      "Lặn ống thở khám phá sông suối trong veo ở châu Á."
-    ],
-    [
-      "Fisherman's Life",
-      "UCC7WFw42VnywQRvewSq29eg",
-      "Câu cá, cắm trại và nấu ngay tại bờ."
-    ],
-    [
-      "Outdoor Chef Life",
-      "UCNqpN335uVY9Sx_ZK_WuOAA",
-      "Câu cá rồi nấu món ăn ngay ngoài trời, nhẹ nhàng dễ xem."
-    ]
-  ],
-  "⛺ Cắm trại & sinh tồn": [
-    [
-      "Madison Clysdale",
-      "UCqpNHx_gjAV70G-H1jZMpOg",
-      "Cô gái Canada dựng nhà gỗ và cắm trại một mình trong rừng."
-    ],
-    [
-      "Going Solo",
-      "UCw0c1U1T0KAsRroZz9yk08Q",
-      "Đi bộ đường dài, cắm trại và nấu ăn giữa thiên nhiên."
-    ],
-    [
-      "Ed Stafford",
-      "UCuhWbavmdpho8aKJ0Q0M7SA",
-      "Nhà thám hiểm từng đi bộ dọc sông Amazon, thử thách sinh tồn."
-    ]
-  ],
-  "🔨 Chế tạo & nấu ăn": [
-    [
-      "Mister Maker",
-      "UC3hGM2kxOs8vRYCcvfH6vuw",
-      "Người thật — chú Mister Maker làm đồ thủ công từ vật liệu sẵn có."
-    ],
+  "🔨 Chế tạo & sửa đồ": [
     [
       "Bobby Duke Arts",
       "UCSC1HqVmTaE4Shn32ihbC7w",
-      "Biến vật liệu bỏ đi thành tác phẩm, hài hước, hợp trẻ con."
+      "Biến vật liệu bỏ đi thành tác phẩm, vừa làm vừa pha trò."
     ],
     [
       "Uri Tuchman",
@@ -375,95 +206,181 @@ window.CHANNELS = {
       "Thợ thủ công vui tính chế máy móc kỳ quặc bằng tay."
     ],
     [
-      "Landen Purifoy",
-      "UCwSaacj6JmPWffsE_3t5Zhw",
-      "Thử và chế các loại nhạc cụ lạ, chơi nhạc trong game."
+      "Adam Savage's Tested",
+      "UCiDJtJKMICpb9B1qf7qjEOA",
+      "Adam Savage (MythBusters) làm đồ trong xưởng và kể liên tục."
+    ],
+    [
+      "Wranglerstar",
+      "UCMIjEnXruVHtvgSVf6TgfUg",
+      "Ông bố Mỹ sửa máy, làm nông trại, giảng giải từng bước."
+    ],
+    [
+      "Cog Hill Family Farm",
+      "UCfhCBX-PIg7H92L1Kz33q7Q",
+      "Gia đình làm nông trại, trồng trọt, sửa máy móc."
     ],
     [
       "Fisher's Shop",
       "UCKo6LouIp-TQ1PqxbWNNyAA",
-      "Xưởng gỗ nhỏ tại nhà, tự nhận là kênh sạch cho cả gia đình."
+      "Xưởng gỗ nhỏ tại nhà, kênh sạch cho cả gia đình."
     ],
     [
       "Boulder Creek Railroad",
       "UCjRkUtHQ774mTg1vrQ6uA5A",
-      "Làm mô hình đường sắt và nhà cửa tí hon bằng máy cắt laser."
+      "Làm mô hình đường sắt và nhà tí hon bằng máy cắt laser."
     ],
     [
-      "Maangchi",
-      "UC8gFadPgK2r1ndqLI04Xvvw",
-      "Dạy nấu món Hàn bằng tiếng Anh, giọng vui, dễ làm theo."
+      "Landen Purifoy",
+      "UCwSaacj6JmPWffsE_3t5Zhw",
+      "Thử và chế các loại nhạc cụ lạ, nói chuyện tự nhiên."
+    ],
+    [
+      "Handyman Hal",
+      "UC8KyyhPfL4v2sZGbcGg7b7Q",
+      "Chú Hal dẫn bé đi xem xe cứu hoả, máy xúc, người thật việc thật."
+    ],
+    [
+      "Tractor Ted",
+      "UCURKSCTqhNYQpJU6tyINiSA",
+      "Máy cày và nông trại thật ở Anh, lời kể đơn giản."
     ]
   ],
-  "🤸 Vận động & yoga": [
+  "🏠 Nhà nhỏ & sống du mục": [
     [
-      "GoNoodle",
-      "UC2YBT7HYqCbbvzu3kKZ3wnw",
-      "Nhảy và vận động theo nhạc — nghỉ giữa giờ học."
+      "Living Big In A Tiny House",
+      "UCoNTMWgGuXtGPLv9UeJZwBw",
+      "Bryce phỏng vấn chủ nhà nhỏ khắp thế giới — nghe hội thoại thật."
     ],
     [
-      "Cosmic Kids Yoga",
-      "UC5uIZ2KOZZeQDQo_Gsi_qbQ",
-      "Cô Jaime dạy yoga qua các câu chuyện phiêu lưu."
+      "Exploring Alternatives",
+      "UC8EQAfueDGNeqb1ALm0LjHA",
+      "Phỏng vấn người sống trong nhà nhỏ, xe van, nhà thuyền."
     ],
     [
-      "Ninja Kidz TV",
-      "UCpZ88DWlKW0H_AYDaUZptcw",
-      "Nhóm trẻ tập ninja, thể dục và đóng phim ngắn."
+      "Nate Murphy",
+      "UCQUpY4R-0N_pHmbCX2I4WPA",
+      "Cải tạo xe van thành nhà di động, giải thích từng bước."
     ],
     [
-      "Payton Delu",
-      "UCv-lQ2yyKXQkdjBrgSS9gxw",
-      "Thành viên Ninja Kidz: thể dục, vượt chướng ngại vật."
+      "Martijn Doolaard",
+      "UClkUhTjFbQbtGfS14h9Vw5g",
+      "Sửa hai căn nhà đá trên núi Alps, quay đẹp, kể chậm."
     ]
   ],
-  "🎉 Giải trí gia đình": [
+  "✈️ Du lịch & gia đình": [
     [
-      "Vat19",
-      "UCDRbNGFusqlXX4a5vwi9ouQ",
-      "Giới thiệu đồ chơi, kẹo và món kỳ lạ bằng quảng cáo hài hước."
+      "The Bucket List Family",
+      "UCuAHfJyWROB4XRReS43EWUw",
+      "Gia đình có ba con đi khắp thế giới, nói chuyện đời thường."
     ],
     [
-      "That's Amazing",
-      "UCSlyP9TyhaqjucGL5sdpQGg",
-      "Hai anh em ném bóng trúng đích kiểu không tưởng."
+      "Kara and Nate",
+      "UC4ijq8Cg-8zQKx8OH12dUSw",
+      "Hai vợ chồng đi 100+ nước, vlog hằng ngày, tiếng Anh Mỹ rõ."
     ],
     [
-      "Slivki Show",
-      "UC37D-JTE7-V-L-VIrxzzZpQ",
-      "Thí nghiệm và mẹo vặt lạ mắt, lồng tiếng Anh."
-    ],
-    [
-      "Nelson Boys",
-      "UCRUoeTmOebT9gJ0XVKfY74Q",
-      "Anh em làm tiểu phẩm hài và chơi game, nội dung sạch."
-    ],
-    [
-      "Jason Maher",
-      "UCPN6irtK3KIT2xUdQYQmh5Q",
-      "Ảo thuật đường phố và vlog vui vẻ."
-    ],
-    [
-      "Jamie Nyland",
-      "UCaTzBPf2rmS3ClFbnmOzkqw",
-      "Thử thách và video vui nhộn: làm nhà cho mèo, đồ chơi khổng lồ."
+      "Dad, how do I?",
+      "UCNepEAWZH0TBu7dkxIbluDw",
+      "Ông bố dạy kỹ năng đời thường: thắt cà vạt, thay lốp, đóng đinh."
     ],
     [
       "The Weenie Family",
       "UCqU8iHGQ4eYvaH0GUQy3uAg",
-      "Gia đình làm tiểu phẩm hài đời thường, nhẹ nhàng."
+      "Gia đình làm tiểu phẩm đời thường, nhẹ nhàng."
     ],
     [
-      "Daily Dose Of Internet",
-      "UCdC0An4ZPNr_YiFiYoVbwaw",
-      "Tuyển clip thú vị trên mạng, lời bình tiếng Anh ngắn và dễ nghe."
+      "Nelson Boys",
+      "UCRUoeTmOebT9gJ0XVKfY74Q",
+      "Anh em làm trò, chơi game, nói chuyện tự nhiên."
+    ],
+    [
+      "Jamie Nyland",
+      "UCaTzBPf2rmS3ClFbnmOzkqw",
+      "Thử thách và chế đồ vui, quay như vlog gia đình."
     ]
   ],
-  "🎮 Game & Roblox": [
+  "🍜 Ăn uống & nấu ăn": [
+    [
+      "Mark Wiens",
+      "UCyEd6QBSgat5kkC6svyjudA",
+      "Đi ăn khắp thế giới cùng vợ con, mô tả món ăn bằng tiếng Anh dễ nghe."
+    ],
+    [
+      "Maangchi",
+      "UC8gFadPgK2r1ndqLI04Xvvw",
+      "Cô Maangchi dạy nấu món Hàn bằng tiếng Anh, giọng vui."
+    ],
+    [
+      "Nick DiGiovanni",
+      "UCMyOj6fhvKFMjxUCp3b_3gA",
+      "Đầu bếp trẻ nấu món khổng lồ, nói nhanh vừa phải, sạch sẽ."
+    ]
+  ],
+  "🔬 Khoa học đời thật": [
+    [
+      "Mark Rober",
+      "UCY1kMZp36IQSyNx_9h4mpCg",
+      "Cựu kỹ sư NASA chế máy và bẫy trộm, giải thích trực tiếp."
+    ],
+    [
+      "The Slow Mo Guys",
+      "UCUK0HBIBWgM2c4vsPhkYY4w",
+      "Hai anh quay siêu chậm và bình luận cực vui."
+    ],
+    [
+      "Operation Ouch",
+      "UCQJDFI9j8UeNoqra37p5OkA",
+      "Hai bác sĩ thật nói chuyện với trẻ về cơ thể người (CBBC)."
+    ],
+    [
+      "Maddie Moate",
+      "UCQ0_JQL4wdQd-Xe5hC4PwTg",
+      "Maddie đi khám phá nhà máy, bảo tàng, thiên nhiên."
+    ],
+    [
+      "TheDadLab",
+      "UCc_-hy0u9-oKlNdMKHBudcQ",
+      "Ông bố làm thí nghiệm với hai con ngay tại bếp."
+    ]
+  ],
+  "🏆 Thử thách & thể thao": [
+    [
+      "Dude Perfect",
+      "UCRijo3ddMTht_IHyNSNXpNQ",
+      "Nhóm bạn ném bóng trúng đích kiểu điên rồ, bình luận liên tục."
+    ],
+    [
+      "How Ridiculous",
+      "UC5f5IV0Bf79YLp_p9nfInRA",
+      "Ba anh người Úc thả đồ từ trên cao, nói chuyện rất vui."
+    ],
+    [
+      "That's Amazing",
+      "UCSlyP9TyhaqjucGL5sdpQGg",
+      "Hai anh em thi ném bóng và làm trò khéo."
+    ],
+    [
+      "Ninja Kidz TV",
+      "UCpZ88DWlKW0H_AYDaUZptcw",
+      "Nhóm trẻ tập ninja và thể dục thật."
+    ],
+    [
+      "Payton Delu",
+      "UCv-lQ2yyKXQkdjBrgSS9gxw",
+      "Bạn nữ Ninja Kidz: thể dục, vượt chướng ngại vật."
+    ],
+    [
+      "Jason Maher",
+      "UCPN6irtK3KIT2xUdQYQmh5Q",
+      "Ảo thuật ngoài đường, nói chuyện với người lạ — hội thoại thật."
+    ]
+  ],
+  "🎮 Game": [
     [
       "EthanGamer",
       "UC1o4Ct4ca7uzqohH0xdaZpQ",
-      "Bạn nhỏ chơi game, lời lẽ sạch sẽ, hợp trẻ con."
+      "Bạn nhỏ chơi game và kể lại, lời lẽ sạch."
     ],
     [
       "StacyPlays",
@@ -473,12 +390,12 @@ window.CHANNELS = {
     [
       "Ali-A Blox",
       "UCD7zDSR3U8R4-FWCykVTT1w",
-      "Ali-A chơi Roblox, nội dung làm riêng cho trẻ."
+      "Ali-A chơi Roblox, nói suốt trận."
     ],
     [
       "Techys",
       "UCoRjsuzMh-MqfRjvlqaVLPw",
-      "Chơi Roblox vui nhộn, lời lẽ sạch sẽ."
+      "Chơi Roblox vui nhộn, lời lẽ sạch."
     ],
     [
       "RoBros",
@@ -488,7 +405,41 @@ window.CHANNELS = {
     [
       "Avocado Playz",
       "UCqA5tXN003u-18CKSICLDdg",
-      "Chơi Roblox cùng nhóm bạn, đối tác chính thức của Roblox."
+      "Chơi Roblox cùng nhóm bạn."
+    ]
+  ],
+  "🚀 Vũ trụ": [
+    [
+      "NASA",
+      "UCLA_DiR1FfKNvjuUpBHmylQ",
+      "Phi hành gia thật nói chuyện từ trạm vũ trụ, phóng tên lửa."
+    ],
+    [
+      "SpaceX",
+      "UCtI0Hodo5o5dUb67FeUjDeA",
+      "Phóng tên lửa và tàu Starship, có bình luận trực tiếp."
+    ],
+    [
+      "Astrum",
+      "UC-9b7aDP6ZN0coj9-xFnrtw",
+      "Kể về hành tinh và vũ trụ bằng giọng chậm rãi."
+    ]
+  ],
+  "🎉 Giải trí": [
+    [
+      "Vat19",
+      "UCDRbNGFusqlXX4a5vwi9ouQ",
+      "Giới thiệu đồ chơi và món kỳ lạ bằng quảng cáo hài hước."
+    ],
+    [
+      "Slivki Show",
+      "UC37D-JTE7-V-L-VIrxzzZpQ",
+      "Thí nghiệm và mẹo vặt lạ mắt, lồng tiếng Anh."
+    ],
+    [
+      "Daily Dose Of Internet",
+      "UCdC0An4ZPNr_YiFiYoVbwaw",
+      "Tuyển clip có thật trên mạng, lời bình ngắn dễ nghe."
     ]
   ]
 };
